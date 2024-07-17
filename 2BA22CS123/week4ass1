@@ -1,0 +1,22 @@
+# Create a list of city names
+n = int(input("Enter the number of city names: "))
+city_names = []
+for i in range(n):
+    city_name = input("Enter city name : ")
+    city_names.append(city_name)
+
+# Print city names with length greater than 3
+print("City names with length greater than 3:")
+for city in city_names:
+    if len(city) > 3:
+        print(city)
+
+# Create a new list by removing city names with length greater than 3
+filtered_city_names = []
+for city in city_names:
+    if len(city) <= 3:
+        filtered_city_names.append(city)
+
+# Print the filtered list
+print("Filtered city names (length 3 or less):")
+print(filtered_city_names)
